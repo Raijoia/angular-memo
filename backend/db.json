@@ -1,0 +1,22 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "O que sabemos é uma gota, o que ignoramos é um oceano.",
+      "autoria": "Isaac Newton",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Tudo oque santa ignorância não faz!",
+      "autoria": "Isaac Newton",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "posso calcular o movimento dos corpos celestes, mas não a loucura dos homens.",
+      "autoria": "Isaac Newton",
+      "modelo": "modelo3"
+    }
+  ]
+}
