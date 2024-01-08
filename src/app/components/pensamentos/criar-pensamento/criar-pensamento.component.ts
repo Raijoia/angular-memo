@@ -55,4 +55,11 @@ export class CriarPensamentoComponent implements OnInit {
   cancelarPenamento() {
     this.router.navigate(['/listarPensamento']);
   }
+
+  habilitarBotao(): String {
+    if(this.formulario.valid) {
+      return 'botao';
+    }
+    return 'botao__desabilitado';
+  }
 }
