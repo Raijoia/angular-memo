@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Pensamento } from '../pensamento';
 import { PensamentoService } from '../pensamento.service';
 import { Router } from '@angular/router';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -9,21 +10,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./criar-pensamento.component.css'],
 })
 export class CriarPensamentoComponent implements OnInit {
-  pensamento: Pensamento = {
-    conteudo: '',
-    autoria: '',
-    modelo: '',
-  };
+
+  formulario!: FormGroup;
 
   constructor(
     private router: Router,
-    private service: PensamentoService
+    private service: PensamentoService,
+    private formBuilder: FormBuilder
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.formulario = this.formBuilder.group({
+      conteudo: ['Formulário de pensamento'],
+      autoria: [''],
+      modelo: ['modelo1'],
+    });
+  }
 
   criarPensamento() {
-    this.service.criar(this.pensamento).subscribe(() => {
+    this.service.criar(this.formulario.value).subscribe(() => {
       this.router.navigate(['/listarPensamento']);
     })
   }
