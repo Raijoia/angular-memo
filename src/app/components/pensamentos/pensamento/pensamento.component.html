@@ -4,7 +4,11 @@
   <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
   <div class="acoe">
     <button class="botao-favorito">
-      <img src="/assets/images/icone-favorito-{{ mudarIconeFavorito() }}.png" alt="Coração de favorito {{ mudarIconeFavorito() }}">
+      <img
+        src="/assets/images/icone-favorito-{{ mudarIconeFavorito() }}.png"
+        alt="Coração de favorito {{ mudarIconeFavorito() }}"
+        (click)="atualizarFavoritos()"
+        >
     </button>
     <button class="botao-editar" routerLink="/pensamentos/editarPensamento/{{ pensamento.id }}">
       <img src="../../../../assets/images/icone-editar.png" alt="Icone de Editar">

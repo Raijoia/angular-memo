@@ -25,7 +25,7 @@
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
-      "favorito": false,
+      "favorito": true,
       "id": 4
     },
     {
@@ -53,7 +53,7 @@
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
-      "favorito": false,
+      "favorito": true,
       "id": 8
     },
     {
@@ -82,7 +82,7 @@
       "conteudo": "asdasdasdadasdasd",
       "autoria": "Isaac Newton",
       "modelo": "modelo3",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": "07b4",
