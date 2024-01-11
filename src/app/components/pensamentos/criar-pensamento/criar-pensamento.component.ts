@@ -40,16 +40,17 @@ export class CriarPensamentoComponent implements OnInit {
         )
       ],
       modelo: ['modelo1'],
+      favorito: [false]
     });
   }
 
   criarPensamento() {
-    if(this.formulario.valid) {
-      this.service.criar(this.formulario.value).subscribe(() => {
-        this.router.navigate(['/listarPensamento']);
-      })
+    if(!this.formulario.valid) {
+      alert("Formulário inválido!")
     }
-    alert("Formulário inválido!")
+    this.service.criar(this.formulario.value).subscribe(() => {
+      this.router.navigate(['/listarPensamento']);
+    })
   }
 
   cancelarPenamento() {

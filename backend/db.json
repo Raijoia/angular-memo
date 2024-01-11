@@ -4,67 +4,92 @@
       "id": 1,
       "conteudo": "O que sabemos é uma gota, o que ignoramos é um oceano.",
       "autoria": "Isaac Newton",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 2,
       "conteudo": "Tudo oque santa ignorância não faaaaaaaz!",
       "autoria": "Isaac Newton",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": 3,
       "conteudo": "posso calcular o movimento dos corpos celestes, mas não a loucura dos homens.",
       "autoria": "Isaac Newton",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": true
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 4
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 5
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 6
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 7
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 8
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 9
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
+      "favorito": true,
       "id": 10
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 11
+    },
+    {
+      "id": "b8f5",
+      "conteudo": "asdasdasdadasdasd",
+      "autoria": "Isaac Newton",
+      "modelo": "modelo3",
+      "favorito": false
+    },
+    {
+      "id": "07b4",
+      "conteudo": "BOOOOOOOOM",
+      "autoria": "POOOOOOO",
+      "modelo": "modelo2",
+      "favorito": false
     }
   ]
 }
