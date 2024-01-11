@@ -12,14 +12,14 @@
       "conteudo": "Tudo oque santa ignorância não faaaaaaaz!",
       "autoria": "Isaac Newton",
       "modelo": "modelo2",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 3,
       "conteudo": "posso calcular o movimento dos corpos celestes, mas não a loucura dos homens.",
       "autoria": "Isaac Newton",
       "modelo": "modelo3",
-      "favorito": false
+      "favorito": true
     },
     {
       "conteudo": "Pensamento novo",
