@@ -19,13 +19,13 @@
       "conteudo": "posso calcular o movimento dos corpos celestes, mas não a loucura dos homens.",
       "autoria": "Isaac Newton",
       "modelo": "modelo3",
-      "favorito": true
+      "favorito": false
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
-      "favorito": true,
+      "favorito": false,
       "id": 4
     },
     {
@@ -53,7 +53,7 @@
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
-      "favorito": true,
+      "favorito": false,
       "id": 8
     },
     {
@@ -67,14 +67,14 @@
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
-      "favorito": true,
+      "favorito": false,
       "id": 10
     },
     {
       "conteudo": "Pensamento novo",
       "autoria": "REaí",
       "modelo": "modelo3",
-      "favorito": false,
+      "favorito": true,
       "id": 11
     },
     {
@@ -82,7 +82,7 @@
       "conteudo": "asdasdasdadasdasd",
       "autoria": "Isaac Newton",
       "modelo": "modelo3",
-      "favorito": true
+      "favorito": false
     },
     {
       "id": "07b4",

@@ -12,32 +12,52 @@ export class ListarPensamentoComponent implements OnInit {
   paginaAtual: number = 1;
   haMaisPensamentos: boolean = true;
   filtro: string = '';
+  favoritos: boolean = false;
+  listaFavoritos: Pensamento[] = [];
 
   constructor(private service: PensamentoService) {}
 
   ngOnInit(): void {
-    this.service.listar(this.paginaAtual, this.filtro).subscribe((listaPensamentos) => {
-      this.listaPensamentos = listaPensamentos;
-      if (!this.listaPensamentos.length) {
-        this.haMaisPensamentos = false;
-      }
-    });
+    this.service
+      .listar(this.paginaAtual, this.filtro, this.favoritos)
+      .subscribe((listaPensamentos) => {
+        this.listaPensamentos = listaPensamentos;
+        if (!this.listaPensamentos.length) {
+          this.haMaisPensamentos = false;
+        }
+      });
   }
 
   carregarMaisPensamentos() {
-    this.service.listar(++this.paginaAtual, this.filtro).subscribe(listaPensamentos => {
-      this.listaPensamentos.push(...listaPensamentos);
-      if(!this.listaPensamentos.length) {
-        this.haMaisPensamentos = false;
-      }
-    })
+    this.service
+      .listar(++this.paginaAtual, this.filtro, this.favoritos)
+      .subscribe((listaPensamentos) => {
+        this.listaPensamentos.push(...listaPensamentos);
+        if (!this.listaPensamentos.length) {
+          this.haMaisPensamentos = false;
+        }
+      });
   }
 
   pesquisarPensamento() {
     this.haMaisPensamentos = true;
     this.paginaAtual = 1;
-    this.service.listar(this.paginaAtual, this.filtro).subscribe(pensamento => {
-      this.listaPensamentos = pensamento;
-    })
+    this.service
+      .listar(this.paginaAtual, this.filtro, this.favoritos)
+      .subscribe((pensamento) => {
+        this.listaPensamentos = pensamento;
+      });
+  }
+
+  listarFavoritos() {
+    this.favoritos = true
+    this.haMaisPensamentos = true;
+    this.paginaAtual = 1;
+    this.service
+      .listar(this.paginaAtual, this.filtro, this.favoritos)
+      .subscribe((pensamento) => {
+        this.listaPensamentos = pensamento;
+        this.listaFavoritos = pensamento;
+      });
   }
 }
